@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+        integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- MENU ENCABEZADO -->
+    <div class="contenedor-header">
+        <header>
+            <div class="logo">
+                <a href="#">Sebastian</a>
+            </div>
+            <nav id="nav">
+                <ul>
+                    <li><a href="#inicio" onclick="seleccionar()">INICIO</a></li>
+                    <li><a href="#sobremi" onclick="seleccionar()">SOBRE MI</a></li>
+                    <li><a href="#skills" onclick="seleccionar()">HABILIDADES</a></li>
+                    <li><a href="#curriculum" onclick="seleccionar()">CURRICULUM</a></li>
+                    <li><a href="#portfolio" onclick="seleccionar()">PORTFOLIO</a></li>
+                    <li><a href="#contacto" onclick="seleccionar()">CONTACTO</a></li>
+                </ul>
+            </nav>
+            <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </header>
+    </div>
+
+    <!-- SECCION INICIO -->
+    <section id="inicio" class="inicio">
+        <div class="contenido-banner">
+            <div class="contenedor-img">
+                <img src="img/me.png" alt="">
+            </div>
+            <h1>Sebastian Caneo</h1>
+            <h2>Desarrollador Backend</h2>
+            <div class="redes">
+
+                <a href="https://www.linkedin.com/in/sebasti%C3%A1n-caneo-4562a512b/" target="_blank"><i
+                        class="fa-brands fa-linkedin-in"></i></a>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION SOBRE MI -->
+    <section id="sobremi" class="sobremi">
+        <div class="contenido-seccion">
+            <h2>Sobre Mí</h2>
+            <p><span>Hola, soy Sebastian Caneo.</span>
+                Estudiante de último año en Ingeniería de Ejecución en informática, me he desempeñado en mi práctica
+                laboral como analista de datos donde hice experiencia analizando datos de ventas y creando interfaces
+                GUI para el uso de un equipo de marketing.
+                me he desempeñado como Asistente de IT donde manejo tecnologías de azure para administración de entornos
+                para equipos de datascience y biotecnología
+            </p>
+
+            <div class="fila">
+                <!-- datos personales -->
+                <div class="col">
+                    <h3>Datos Personales</h3>
+                    <ul>
+                        <li>
+                            <strong>Cumpleaños</strong>
+                            02-07-2001
+                        </li>
+                        <li>
+                            <strong>Teléfono</strong>
+                            +569 31043379
+                        </li>
+                        <li>
+                            <strong>Email</strong>
+                            sebamc403@gmail.com
+                        </li>
+                        <li>
+                            <strong>Dirección</strong>
+                            El bosque, Santiago-Chile
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- intereses -->
+                <div class="col">
+                    <h3>Intereses</h3>
+                    <div class="contenedor-intereses">
+                        <div class="interes">
+                            <i class="fa-solid fa-gamepad"></i>
+                            <span>JUEGOS</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-headphones"></i>
+                            <span>MUSICA</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-plane"></i>
+                            <span>VIAJAR</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-brands fa-linux"></i>
+                            <span>Linux</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-person-hiking"></i>
+                            <span>DEPORTE</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-book"></i>
+                            <span>LIBROS</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button>
+                <a href="Files/CV Sebastian Caneo 2023.pdf" download="CV_Sebastian Caneo" target="_blank">Descargar CV
+                    <i class="fa-solid fa-download"></i></a>
+                <span class="overlay"></span>
+            </button>
+        </div>
+    </section>
+
+    <!-- SECCION SKILLS -->
+    <section class="skills" id="skills">
+        <div class="contenido-seccion">
+            <h2>Skills</h2>
+            <div class="fila">
+                <!-- Technical Skill -->
+                <div class="col">
+                    <h3>Habilidades Tecnicas</h3>
+                    <div class="skill">
+                        <span>Javascript</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>75%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>HTML & CSS</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>89%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Python</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>81%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Professional Skills -->
+                <div class="col">
+                    <h3>Habilidades Profesionales</h3>
+                    <div class="skill">
+                        <span>Comunicación</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>80%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Trabajo en Equipo</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>70%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Creatividad</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>99%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Dedicación</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>95%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION CURRICULUM -->
+    <section id="curriculum" class="curriculum">
+        <div class="contenido-seccion">
+            <h2>Curriculum</h2>
+            <div class="fila">
+                <div class="col izquierda">
+                    <h3>Educación</h3>
+                    <div class="item izq">
+                        <h4>Ingenieria De Ejecución Ejecución en Informatica</h4>
+                        <span class="casa">Universidad De Las Americas</span>
+                        <span class="fecha">2020 - En Curso (Ultimo Año)</span>
+                        <p>
+                            Actualmente me encuentro en mi último año de la carrera de Ingeniería de Ejecución en
+                            Informática en la Universidad de las Américas. A lo largo de mi formación académica, he
+                            adquirido una sólida base en diversos aspectos de la informática, incluyendo programación,
+                            sistemas de bases de datos, redes de computadoras y desarrollo de software. Mi educación ha
+                            combinado teoría y práctica, permitiéndome desarrollar habilidades técnicas junto con una
+                            comprensión integral de cómo estas habilidades se aplican en situaciones del mundo real.
+                            Durante mi carrera, he participado en proyectos que simulan desafíos profesionales, lo cual
+                            me ha preparado para abordar problemas complejos y ofrecer soluciones innovadoras. Mis
+                            estudios también me han enseñado a adaptarme a las tecnologías emergentes y a mantenerme
+                            actualizado en un campo en constante evolución
+                            Al estar en el último año, estoy centrando mis esfuerzos en especializarme en áreas que me
+                            apasionan, como el análisis de datos y la inteligencia artificial, mientras completo mi
+                            proyecto de grado, que es un reflejo de las habilidades y conocimientos adquiridos durante
+                            mi formación. Esta etapa final está solidificando mi preparación para ingresar al campo
+                            profesional de la informática con una base sólida y una perspectiva innovadora.</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="col derecha">
+                    <h3>Experiencia de trabajo</h3>
+                    <div class="item der">
+                        <h4>Analista De Datos (Practica Laboral)</h4>
+                        <span class="casa">Liva Company SpA</span>
+                        <span class="fecha">Enero 2023 - Marzo 2023</span>
+                        <p>
+                            Durante mi práctica como Analista de datos, me enfoqué en el manejo eficiente de datos de
+                            registros de ventas, crucial para el análisis y la toma de decisiones en un equipo de
+                            marketing.
+                            Implementé un servidor privado/local que facilitó el procesamiento y análisis de estos
+                            datos.
+                            Utilicé herramientas avanzadas de análisis de datos y visualización como Pandas para la
+                            manipulación de datos,
+                            Statsmodels para la modelización estadística, Matplotlib y Numpy para la visualización y
+                            análisis de datos, y Panel junto con HVPot para crear tablas y gráficos interactivos.
+                            Además, desarrollé una interfaz gráfica de usuario (GUI) utilizando Tkinter, que permitió a
+                            los usuarios ingresar registros de ventas y visualizar datos y tendencias de manera
+                            intuitiva y eficaz.
+                            Este proyecto también me permitió profundizar mis habilidades en análisis de datos y
+                            desarrollo de software.
+                        </p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h4>Information Technology Assistant</h4>
+                        <span class="casa">Liva Company SpA | NIDS </span>
+                        <span class="fecha">Julio 2023 - Diciembre 2023</span>
+                        <p>
+                            En mi rol anterior en el Núcleo de Investigación de Data Science (NIDS) y en Liva Company
+                            SpA, apoyé significativamente en proyectos de investigación, especialmente en aprendizaje
+                            automático (ML).
+                            Configuré y mantuve sistemas para que los investigadores ejecutasen eficientemente
+                            algoritmos de ML, generando resultados valiosos.
+                            Implementé y administré herramientas como JupyterLab y RStudio en VMs de Azure, facilitando
+                            un análisis de datos avanzado. También me encargué de un servidor local, manteniéndolo
+                            operativo y seguro.
+                        </p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION PORTFOLIO -->
+    <section id="portfolio" class="portfolio">
+        <div class="contenido-seccion">
+            <h2>PORTFOLIO</h2>
+            <div class="galeria">
+                <div class="proyecto">
+                    <a href="https://github.com/SCaneoGarrido/Portafolios/tree/main/LocalDrive" target="_blank">
+                        <img src="img/DALL·E 2023-12-15 11.04.05 cloud.png" alt="">
+                        <div class="overlay">
+                            <h3>Local Cloud Drive</h3>
+                            <p>
+                                es una aplicación de almacenamiento en la nube personal que permite a los usuarios
+                                gestionar archivos y directorios en un servidor local. Ofrece funcionalidades para
+                                subir, descargar, eliminar archivos, así como crear y eliminar directorios.
+                            </p>
+                        </div>
+                    </a>
+                </div>
+                <div class="proyecto">
+                    <a href="https://github.com/SCaneoGarrido/Portafolios/tree/main/Biblioteca" target="_blank">
+                        <img src="img/personal library.png" alt="">
+                        <div class="overlay">
+                            <h3>Personal Library</h3>
+                            <p>
+                                pagina web para tener una biblioteca personal virtual,
+                                aun estoy desarrollando este proyecto por lo que muchas de las funcionalidades, deben
+                                realizarse mediante peticiones con Postman,
+                                las cuales pueden ser como subir la información de un libro o subir el propio libro en
+                                si.
+                            </p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+    </section>
+
+    <!-- SECCION CONTACTO -->
+    <section id="contacto" class="contacto">
+        <div class="contenido-seccion">
+            <h2>CONTACTO</h2>
+            <div class="fila">
+                <!-- Formulario -->
+
+                <form action="https://formspree.io/f/xgegwaeg" method="POST" class="col">
+                    <input type="text" name="nombre" placeholder="Nombre">
+                    <input type="text" name="numero" placeholder="+Numero">
+                    <input type="email" name="email" placeholder="Dirección de correo">
+                    <input type="text" name="tema" placeholder="Tema">
+                    <textarea name="mensaje" cols="30" rows="10" placeholder="Mensaje" style="resize: none;"></textarea>
+                    <button type="submit">
+                        Enviar Mensaje<i class="fa-solid fa-paper-plane"></i>
+                        <span class="overlay"></span>
+                    </button>
+                </form>
+                <!-- Mapa -->
+                <div class="col">
+                    <img src="img/ubicacion.png" alt="">
+                    <div class="info">
+                        <ul>
+                            <li>
+                                <i class="fa-solid fa-mobile-screen"></i>
+                                Numero: +569 31043379
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-envelope"></i>
+                                Email: sebamc403@gmail.com
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <footer>
+        <a href="#inicio" class="arriba">
+            <i class="fa-solid fa-angles-up"></i>
+        </a>
+        <div class="redes">
+            <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="#"><i class="fa-solid fa-rss"></i></a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
